@@ -23,6 +23,11 @@ if (Pin_answer.pin === Pin) {
     let operation_ans=await inquirer.prompt(
         [
             {
+                name:"account_type",
+                type:"list",
+                choices:["Current Account","Saving Account"]
+            },
+            {
                 name:"operation",
                 message:"please select option:",
                 type:"list",
